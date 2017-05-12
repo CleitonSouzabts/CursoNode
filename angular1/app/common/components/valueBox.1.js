@@ -1,5 +1,5 @@
-(function() {
-  app.component('valueBox', {
+(function(){
+  app.component('valueBox1', {
     bindings: {
       grid: '@',
       colorClass: '@',
@@ -15,7 +15,7 @@
     ],
     template: `
     <div class="{{ $ctrl.gridClasses }}">
-      <div class="small-box {{ $ctrl.colorClass }}">
+      <div class="{{ $ctrl.colorClass }}">
         <div class="inner">
           <h3>{{ $ctrl.value }}</h3>
           <p>{{ $ctrl.text }}</p>

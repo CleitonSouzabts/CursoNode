@@ -1,5 +1,5 @@
 (function(){
-  angular.module('primeiraApp').component('paginator', {
+  app.component('paginator', {
     bindings: {
       url: '@',
       pages: '@',

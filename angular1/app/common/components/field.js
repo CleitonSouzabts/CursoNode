@@ -1,5 +1,5 @@
 (function() {
-  angular.module('primeiraApp').component('field', {
+  app.component('field', {
     bindings: {
       id: '@',
       label: '@',

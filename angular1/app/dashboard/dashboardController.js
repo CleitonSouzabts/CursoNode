@@ -1,5 +1,5 @@
-(function(){
-angular.module('primeiraApp').controller('DashboardCtrl', [
+(function() {
+app.controller('DashboardCtrl', [
   '$http',
   DashboardController
 ])

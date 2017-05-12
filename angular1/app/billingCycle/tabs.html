@@ -3,22 +3,22 @@
 <section class="content">
   <div class="nav-tabs-custom" ng-controller="BillingCycleCtrl as bcCtrl">
     <ul class="nav nav-tabs">
-      <li ng-if="btCtrl.tabList" ng-class="{active: bcCtrl.tabList}">
+      <li ng-if="bcCtrl.tabList" ng-class="{active: bcCtrl.tabList}">
         <a href data-target="#tabList" data-toggle="tab">
           <i class="fa fa-bars"></i> Lista
         </a>
       </li>
-      <li ng-if="btCtrl.tabCreate">
+      <li ng-if="bcCtrl.tabCreate">
         <a href data-target="#tabCreate" data-toggle="tab">
           <i class="fa fa-plus"></i> Incluir
         </a>
       </li>
-      <li ng-if="btCtrl.tabUpdate" ng-class="{active: bcCtrl.tabUpdate}">
+      <li ng-if="bcCtrl.tabUpdate" ng-class="{active: bcCtrl.tabUpdate}">
         <a href data-target="#tabUpdate" data-toggle="tab">
           <i class="fa fa-pencil"></i> Alterar
         </a>
       </li>
-      <li ng-if="btCtrl.tabDelete" ng-class="{active: bcCtrl.tabDelete}">
+      <li ng-if="bcCtrl.tabDelete" ng-class="{active: bcCtrl.tabDelete}">
         <a href data-target="#tabDelete" data-toggle="tab">
           <i class="fa fa-trash-o"></i> Excluir
         </a>
@@ -26,13 +26,13 @@
     </ul>
     <div class="tab-content">
       <div class="tab-pane" id="tabList" ng-include="'billingCycle/list.html'"
-      ng-class="{active: bcCtrl.tabList}" ng-if="btCtrl.tabList"></div>
+      ng-class="{active: bcCtrl.tabList}" ng-if="bcCtrl.tabList"></div>
       <div class="tab-pane" id="tabCreate" ng-include="'billingCycle/form.html'"
-      ng-if="btCtrl.tabCreate"></div>
+      ng-if="bcCtrl.tabCreate"></div>
       <div class="tab-pane" id="tabUpdate" ng-include="'billingCycle/form.html'"
-      ng-class="{active: bcCtrl.tabUpdate}" ng-if="btCtrl.tabUpdate"></div>
+      ng-class="{active: bcCtrl.tabUpdate}" ng-if="bcCtrl.tabUpdate"></div>
       <div class="tab-pane" id="tabDelete" ng-include="'billingCycle/form.html'"
-      ng-class="{active: bcCtrl.tabDelete}" ng-if="btCtrl.tabDelete"></div>
+      ng-class="{active: bcCtrl.tabDelete}" ng-if="bcCtrl.tabDelete"></div>
     </div>
   </div>
 </section>

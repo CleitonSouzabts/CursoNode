@@ -1,5 +1,5 @@
-(function(){
-  angular.module('primeiraApp').component('contentHeader',{
+(function() {
+  app.component('contentHeader',{
     bindings: {
       name: '@',
       small: '@',

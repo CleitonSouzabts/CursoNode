@@ -1,3 +1,4 @@
+(function() {
 const gulp = require('gulp')
 const uglify = require('gulp-uglify')
 const concat = require('gulp-concat')
@@ -5,7 +6,7 @@ const uglifycss = require('gulp-uglifycss')
 
 gulp.task('deps', ['deps.js', 'deps.css', 'deps.fonts'])
 
-gulp.task('deps.js', function(){
+gulp.task('deps.js', function() {
   gulp.src([
     'node_modules/angular/angular.min.js',
     'node_modules/angular-ui-router/release/angular-ui-router.min.js',
@@ -41,3 +42,4 @@ gulp.task('deps.fonts', function() {
   ])
   .pipe(gulp.dest('public/assets/fonts'))
 })
+})()

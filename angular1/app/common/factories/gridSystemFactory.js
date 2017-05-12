@@ -1,7 +1,7 @@
-(function(){
-  angular.module('primeiraApp').factory('gridSystem', [ function() {
+(function() {
+  app.factory('gridSystem', [ function() {
 
-  function toCssClasses(numbers){
+  function toCssClasses(numbers) {
     const cols = numbers ? numbers.split(' ') : []
     let classes = ''
 
@@ -17,14 +17,3 @@
   }])
 
 })()
-
-
-
-
-//'12' -> 'col-xs-12'
-//'6' -> 'col-xs-6'
-//'12 6' -> 'col-xs-12 col-sm-6'
-//'12 6 4 2' -> 'col-xs-12 col-sm-6 col-md-4 col-lg-2'
-
-//<meu-componente grid = "12 6" />
-//<div class="col-xs-12 col-sm-6">...</div>

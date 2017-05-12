@@ -1,4 +1,5 @@
-angular.module('primeiraApp').config([
+(function() {
+app.config([
   '$stateProvider',
   '$urlRouterProvider',
   function($stateProvider, $urlRouterProvider) {
@@ -9,8 +10,9 @@ angular.module('primeiraApp').config([
       url: "/billingCycles?page",
       templateUrl: "billingCycle/tabs.html"
     })
-
+    
     $urlRouterProvider.otherwise('/dashboard')
 
   }
 ])
+})()

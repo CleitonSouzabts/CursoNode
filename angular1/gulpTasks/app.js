@@ -1,3 +1,4 @@
+(function() {
 const gulp = require('gulp')
 const htmlmin = require('gulp-htmlmin')
 const uglifycss = require('gulp-uglifycss')
@@ -32,3 +33,4 @@ gulp.task('app.assets', function() {
   gulp.src('assets/**/*.*')
   .pipe(gulp.dest('public/assets'))
 })
+})()
