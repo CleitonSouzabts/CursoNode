@@ -17,10 +17,11 @@
         vm.billingCycle = {credits: [{}], debts: [{}]}
         vm.billingCycles = response.data
         vm.calculateValues()
-
+        tabs.show(vm, {tabList: true, tabCreate: true})
         $http.get(`${url}/count`).then(function(response) {
           vm.pages = Math.ceil(response.value / 10)
-          tabs.show(vm, {tabList: true, tabCreate: true})
+          
+          //tabs.show(vm, {tabList: true, tabCreate: true})
         })
       })
     }
@@ -118,4 +119,4 @@
    vm.refresh()
    ////////////////////////////////////////////
 }
-  })()
+})()

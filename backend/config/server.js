@@ -16,13 +16,3 @@ server.listen(port, function() {
 })
 
 module.exports = server
-
-//server.use(function(req, res, next) {
-//  console.log('Meu Middleware 1')
-//  next()
-//})
-
-//server.use(function(req, res, next) {
-//  console.log('Meu Middleware 2')
-//  res.send('Funcionou novamente!!!')
-//})
